@@ -4,6 +4,9 @@
 *.war
 *.ear
 
+# Python #
+*.pyc
+
 # IDEA
 /.idea/
 *.iml
