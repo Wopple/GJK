@@ -1,0 +1,4 @@
+GJK
+===
+
+GJK implementations
