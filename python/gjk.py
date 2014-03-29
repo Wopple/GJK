@@ -13,17 +13,18 @@ def dot(v1, v2):
     return v1[0] * v2[0] + v1[1] * v2[1]
 
 def aXbXa(v1, v2):
+    """
+    Performs v1 X v2 X v1 where X is the cross product. The
+    input vectors are (x, y) and the cross products are
+    performed in 3D with z=0. The output is the (x, y)
+    component of the 3D cross product.
+    """
+
     x0 = v1[0]
     x1 = v1[1]
     x1y0 = x1 * v2[0]
     x0y1 = x0 * v2[1]
     return (x1 * (x1y0 - x0y1), x0 * (x0y1 - x1y0))
-
-def turnRight(v):
-    return (v[1], -v[0])
-
-def turnLeft(v):
-    return (-v[1], v[0])
 
 def supportPoly(polygon, direction):
     bestPoint = polygon[0]
