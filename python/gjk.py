@@ -115,7 +115,7 @@ def doSimplex(simplex, d):
                 d[0] = cross[0]
                 d[1] = cross[1]
         else:
-            if dot(ac, a0) > 0:
+            if dot(ac, a0) >= 0:
                 cross = aXbXa(ac, a0)
 
                 if dot(ab, cross) >= 0:
