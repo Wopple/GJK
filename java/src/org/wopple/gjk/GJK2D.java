@@ -30,6 +30,8 @@ public class GJK2D {
                 return false;
             }
 
+            simplex.push(a);
+
             if (updateSimplex(simplex, direction)) {
                 return true;
             }
