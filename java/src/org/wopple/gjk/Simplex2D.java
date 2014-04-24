@@ -21,6 +21,7 @@ public class Simplex2D {
     public void remove(int index) {
         while (index < size - 1) {
             points[index] = points[index + 1];
+            index++;
         }
 
         size--;
