@@ -64,7 +64,7 @@ public class MutablePoint2D implements IPoint2D {
         double ay_bx = y * b.x();
         double temp = y * (ay_bx - ax_by);
         y = x * (ax_by - ay_bx);
-        x= temp;
+        x = temp;
         return this;
     }
 }
